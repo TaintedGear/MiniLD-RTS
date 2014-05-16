@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B1C25765-B850-41CE-99D2-AA9F0AB9402D}</ProjectGuid>
+    <RootNamespace>miniLD_RTS</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Jason Lewis\Documents\Visual Studio 2010\Projects\miniLD_RTS\miniLD_RTS\SDL\SDL-1.2.15\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Users\Jason Lewis\Documents\Visual Studio 2010\Projects\miniLD_RTS\miniLD_RTS\SDL\SDL-1.2.15\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL.lib;SDLmain.lib;SDL_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="enemyController.cpp" />
+    <ClCompile Include="game.cpp" />
+    <ClCompile Include="gameObject.cpp" />
+    <ClCompile Include="healthBarObject.cpp" />
+    <ClCompile Include="level.cpp" />
+    <ClCompile Include="levelManager.cpp" />
+    <ClCompile Include="machineGunnerObject.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
+    <ClCompile Include="marineObject.cpp" />
+    <ClCompile Include="markerObject.cpp" />
+    <ClCompile Include="medicObject.cpp" />
+    <ClCompile Include="menu.cpp" />
+    <ClCompile Include="mouse.cpp" />
+    <ClCompile Include="PathFinder.cpp" />
+    <ClCompile Include="pathNode.cpp" />
+    <ClCompile Include="physicsObject.cpp" />
+    <ClCompile Include="playerController.cpp" />
+    <ClCompile Include="slicerObject.cpp" />
+    <ClCompile Include="spitterObject.cpp" />
+    <ClCompile Include="system.cpp" />
+    <ClCompile Include="tileObject.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="unitObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="EnemyController.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="HealthBarObject.h" />
+    <ClInclude Include="Level.h" />
+    <ClInclude Include="LevelManager.h" />
+    <ClInclude Include="MachineGunnerObject.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="MarineObject.h" />
+    <ClInclude Include="MarkerObject.h" />
+    <ClInclude Include="MedicObject.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Mouse.h" />
+    <ClInclude Include="PathFinder.h" />
+    <ClInclude Include="PathNode.h" />
+    <ClInclude Include="PhysicsObject.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="SlicerObject.h" />
+    <ClInclude Include="SpitterObject.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="TileObject.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="UnitObject.h" />
+    <ClInclude Include="Utillitys.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Sprites\alien_sprites.bmp" />
+    <None Include="..\Sprites\health_bar.bmp" />
+    <None Include="..\Sprites\marine_sprites.bmp" />
+    <None Include="Fonts\hyperion.ttf" />
+    <None Include="Fonts\Title Font.TTF" />
+    <None Include="Levels\levelOneFloor.txt" />
+    <None Include="Levels\levelOneWalls.txt" />
+    <None Include="Levels\LevelTwoFloor.txt" />
+    <None Include="Levels\LevelTwoWalls.txt" />
+    <None Include="Sprites\BackGround.bmp" />
+    <None Include="Sprites\markers_sheet.bmp" />
+    <None Include="Sprites\tile_sheet.bmp" />
+    <None Include="Sprites\tile_sheet_temp.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
