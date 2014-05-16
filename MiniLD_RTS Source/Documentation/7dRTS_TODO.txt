@@ -1,0 +1,48 @@
+TODO
+
+Code : {
+
+Features:
+
+
+	Medic
+	Grab feature,
+	revive feature
+
+	AI
+	A* pathfinding? / Waypoints
+	Map Generator ( basically done, want to refine it more)
+		{
+			Collision with the walls
+		}
+
+	Menu
+	Music
+	Sound fx
+
+Refine / fix:
+
+	Refine the group selection
+	Cast to float properly / get rid of warnings
+	Comment
+
+	Refine the anti clumping
+}
+
+Art : {
+
+	Tile sheet { 2-3 diffrent tile sets?}
+	Animal sprite sheet { for alien face huggers to moprh }
+	
+}
+
+Sounds : {
+
+
+	Marine attack fx
+	Alien spitter fx
+	Alien Slice fx
+
+	Background Music
+
+}
